@@ -14,15 +14,17 @@
 
 # print(a + b)
 
-# Dicard -> removes/ignore  
+# Dicard -> removes/ignore -> if no values is available 
 # Remove -> removes/send error
 
 names = ['ram', 'shyam', 'ram', 'shyam', 'hari', 'rita', 'ram', 'rita']
 
-print(names.count('ram'))
-
 print(len(set(names)))         #counting unique names
 
+band = ['Nirvana', 'Alice In Chains', 'Nirvana', 'Pearl Jam', 'Nirvana', 'Alice In Chains', 'Nirvana', 'Pearl Jam']
+unique_value  = set(band)
+length = len(unique_value)
+print(length)
 
 
 
