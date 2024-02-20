@@ -19,10 +19,10 @@
 # #short hand if
     
 
-# if 2 % 2 == 0:
-#     a = 'even'
+if 2 % 2 == 0:
+    a = 'even'
 
-# a = 'even' if 2 % 2 == 0 else 'odd'
+a = 'even' if 2 % 2 == 0 else 'odd'
 
 
 num = int(input('Enter a number: '))
@@ -33,7 +33,7 @@ string = str(input("Enter your name: "))
 
 x = len(string)
 
-print("Length of your name is", x)
+print(f"Length of your name is {x}")
 
 
 
@@ -64,3 +64,9 @@ elif name_lower == "rita":
     print(f"Hi Rita, Mom's flying chappal received at {rita}km/hr") 
 else:
     print("You don't exists")
+
+s = input('Enter a string').lower()
+if 'a' in s or 'e' in s or 'i' in s or 'o' in s or 'u' in s:
+    print("Vowel is present")
+else:
+    print("Vowels is not present")
