@@ -137,6 +137,16 @@
 # text = "Unveiling unique underwater universes, Ulysses, an underwater explorer, uncovered unimaginable umbrella-shaped undersea formations."
 # print(count_u(text))
 
+# def count_u(s):
+#     count = 0
+#     for item in s:
+#         if item == 'u':
+#             count = count + 1
+
+#     return count
+
+# print(count_u('Uruguay'))        
+
 
 
 
@@ -196,6 +206,7 @@
 # num = int(input("Enter a number : "))
 # even(num)
 
+
 # ------------------------------------------------------Using List Comprehension------------------------------------------------------------------------------------------
 
 # def even(num_limit):
@@ -219,6 +230,18 @@
 
 # result = even(num)
 # print(result)
+
+
+#----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# def extract_even_number(l):
+#     even = []
+#     for num in l:
+#         if num % 2 == 0:
+#             even.append(num)
+    
+#     return even
+
+# print(extract_even_number([1, 2, 3 , 4, 5, 6, 7, 8, 9]))
 
 
 
@@ -333,21 +356,22 @@
 
 #----------------- Write a function that takes a string and returns the total number of vowels and consonants present inthe string in dictionary format.-------------------------
 
-def count_vc(text):
-    l_text = text.lower()
-    vowels = 'aeiou'
-    count = {'vowels' : 0, 'constant' : 0}
+# def count_vc(text):
+#     l_text = text.lower()
+#     vowels = 'aeiou'
+#     count = {'vowels' : 0, 'constant' : 0}
 
-    for char in text:
-        if char.isalpha():
-            if char in vowels:
-                count['vowels'] += 1
-            else:
-                count['constant'] += 1
+#     for char in text:
+#         if char.isalpha():
+#             if char in vowels:
+#                 count['vowels'] += 1
+#             else:
+#                 count['constant'] += 1
     
-    return count
+#     return count
 
-input_text = input("Enter a text : ")
-result = count_vc(input_text)
+# input_text = input("Enter a text : ")
+# result = count_vc(input_text)
 
-print(result)
+# print(result)
+
