@@ -131,14 +131,18 @@
 # sum = sum_num(num1, num2, num3, num4)
 # print(sum)
 
-#------->using *args
+#------->using *args-----------------------------------------
+
 #Using *args
-def sum_of_num(*num):
-    sum
+# def sum_of_num(*num):
+#     sum = 0
+#     for i in num:
+#         sum = sum + i
+#     return sum
 
+# print(sum_of_num(1, 2, 3, 4, 5))
 
-
-
+#----------------------------------------------------------
 
 # def sum_of_numbers(*num):
 #     total_sum = 0
@@ -158,11 +162,75 @@ def sum_of_num(*num):
 
 # print(sum_num)
 
+# write a function that takes 4 numbers and returns the mean of those numnbers.
+
+# def num_mean(num1, num2, num3, num4):
+#     mean = (num1 + num2 + num3 + num4 ) / 4
+#     return mean
+
+# print(num_mean(1,2,3,4))
+
+
+# write a function that takes multiple number and returns the sum of all those numbers.
+
+# def sum_of_num(*num):
+#     sum = 0
+
+#     for i in num:
+#         sum = sum + i
+    
+#     return sum
+
+# print(sum_of_num(1, 2, 3, 4, 5))
+
+
+# def mean_num(*num):
+#     sum = 0
+
+#     for i in num:
+#         sum = sum + i
+    
+#     mean = sum / len(num)
+#     return mean
+
+# print(mean_num(1,2,3,4))
+
+# write a function that takes a list of numbers and returns the max and min of those numbers in dictionary
+
+# def find_min_max(num_list):
+#     max_val = num_list[0]
+#     min_val = num_list[0]
+
+#     for num in num_list:
+#         if num > max_val:
+#             max_val = num
+        
+#         if num < min_val:
+#             min_val = num
+
+#     result_dic = { 'max value' : max_val, 'min value' : min_val}
+
+#     return result_dic
+
+# numbers = [1, 3, 2, 4, 5]
+# print(find_min_max(numbers))
 
 
 
+# write a function that takes a list of numbers and returns the median of those numbers
 
+def median(num):
+    #sorting
+    sorted_num = sorted(num)
 
+    n = len(num)
 
+    if n % 2 == 0:
+        median = (sorted_num[n // 2 - 1] + sorted_num[n // 2]) / 2
+    else:
+        median = sorted_num[(n + 1) // 2 - 1]
 
+    return median
 
+num_list = [1, 2, 3, 4, 5, 6]
+print(median(num_list))
