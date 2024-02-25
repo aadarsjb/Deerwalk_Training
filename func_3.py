@@ -133,11 +133,30 @@
 
 #------->using *args
 #Using *args
+def sum_of_num(*num):
+    sum
 
-user_input = input("Enter number separated by spaces : ")
-user_number = user_input.split()\
-num1, num2, num3, num4 
 
+
+
+
+# def sum_of_numbers(*num):
+#     total_sum = 0
+
+#     for i in num:
+#         total_sum = total_sum + int(i) #converting to integers
+    
+#     return total_sum
+
+
+# user_input = input("Enter number separated by spaces : ")
+# user_number = user_input.split()
+# num1, num2, num3, num4 = user_number
+# print(num1, num2, num3, num4)
+
+# sum_num = sum_of_numbers(num1, num2, num3, num4)
+
+# print(sum_num)
 
 
 
