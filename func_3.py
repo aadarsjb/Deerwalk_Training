@@ -22,6 +22,7 @@
 
 # def print_date(i_date):
 #     #split the date
+
 #     if '-' in i_date:
 #         split_date = i_date.split('-')
 #     elif '/' in i_date:
@@ -32,14 +33,19 @@
 #     #Extracting indiviuals
 #     year, month, day = split_date
 
+# storing in dict
+# return {'year: splitted_date[0], 'month': splitted_date[1], 'day': splitted_date[2]} 
+
 #     #storing in dict
 #     date_dict = {'year': year, 'month': month, 'day': day}
 #     return date_dict
 
-
 # input_date = input('Enter date separated by "/" or "-" : ')
 
 # print(print_date(input_date))
+
+
+
 
 #--------------- Write a function that takes a number and returns even number upto that number.
 
@@ -65,7 +71,7 @@
 
 
 #------------------- write a function that takes an email and check wether that email belongs to edu.np account or not.
-
+# wrong method
 # def check_email(email):
 #     if '.edu.np' in email:
 #         print("Email belongs to .edu.np")
@@ -219,18 +225,18 @@
 
 # write a function that takes a list of numbers and returns the median of those numbers
 
-def median(num):
-    #sorting
-    sorted_num = sorted(num)
+# def median(num):
+#     #sorting
+#     num.sort()
 
-    n = len(num)
+#     n = len(num)
 
-    if n % 2 == 0:
-        median = (sorted_num[n // 2 - 1] + sorted_num[n // 2]) / 2
-    else:
-        median = sorted_num[(n + 1) // 2 - 1]
+#     if n % 2 == 0:
+#         median = (num[n // 2 - 1] + num[n // 2]) / 2
+#     else:
+#         median = num[(n + 1) // 2 - 1]
 
-    return median
+#     return median
 
-num_list = [1, 2, 3, 4, 5, 6]
-print(median(num_list))
+# num_list = [1, 2, 3, 4, 5, 6]
+# print(median(num_list)) 
