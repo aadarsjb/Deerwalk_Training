@@ -10,7 +10,7 @@
 
 
 
-# --------------------------------------------Write a function that takes a string and prints the length of the string.-------------------------------------------------------------
+# -----------------------------------Write a function that takes a string and prints the length of the string.-------------------------------------------------------------
 # def string_length(text):
 #     length = len(text)
 #     print(length)
