@@ -49,6 +49,7 @@ print(upper_name)
 
 print(list(map(lambda upper_name: upper_name.upper(), names)))
 
+
 #----------------------------------------------------------------------------------------------------
 
 #print name that starts with 'r' or 'R'
@@ -56,25 +57,34 @@ given_name = ['ram' , 'shyam', 'hari', 'rita', 'Ramesh', 'Riya']
 name_r = [name for name in given_name if name.startswith('r') or name.startswith('R')]
 print(name_r)
 
+# Don't use contacination 
+formatted_name = ['Mr.' + name for name in given_name]
+print(formatted_name)
+
+formatted_name_1 = [f'Mr. {name.capitalize()}' for name in given_name]
+print(formatted_name_1)
+
 print(list(filter(lambda x: x.startswith('r') or x.startswith('R'), given_name)))
 
+print(list(filter(lambda x: x.lower().startswith('r'), given_name)))
+
 #----------------------------------------------------------------------------------------------------------
-#select all the names that has r or R in it.
-n = ['ram' , 'shyam', 'sonu', 'rita', 'Ramesh', 'priya', 'supriya']
+# #select all the names that has r or R in it.
+# n = ['ram' , 'shyam', 'sonu', 'rita', 'Ramesh', 'priya', 'supriya']
 
-n_r = [name for name in n if 'r' in name.lower()]
-print(n_r)
+# n_r = [name for name in n if 'r' in name.lower()]
+# print(n_r)
 
-print(list(filter(lambda i: 'r' in i.lower(), n)))
+# print(list(filter(lambda i: 'r' in i.lower(), n)))
 
-#-------------------------------------------------------------------------------------------
+# #-------------------------------------------------------------------------------------------
 
-#take the square root of all values
-num_1 = [1, 4, 9, 16, 25]
+# #take the square root of all values
+# num_1 = [1, 4, 9, 16, 25]
 
-sqrt_value = [x ** 0.5 for x in num_1]
-print(sqrt_value)  
+# sqrt_value = [int(x ** 0.5) for x in num_1]
+# print(sqrt_value)  
 
-print(list(map(lambda x: x ** 0.5, num_1)))
+# print(list(map(lambda x: int(x ** 0.5), num_1)))
 
-#--------------------------------------------------------------------------------------------
+# #--------------------------------------------------------------------------------------------
