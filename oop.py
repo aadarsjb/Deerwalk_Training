@@ -51,19 +51,20 @@ class Bank:
 bank = Bank()
 
 #Open an account
-account_number = bank.open_account("Hari", "Subedi", 22, 10000)
+account_number_1 = bank.open_account("Hari", "Subedi", 22, 10000)
+account_number_2 = bank.open_account("Hari1", "Subedi", 22, 50000)
 
 #Check Balance
-print(bank.check_balance(account_number))
+print(bank.check_balance(account_number_1))
 
 #Deposit money
-print(bank.deposit(account_number, 500))
+print(bank.deposit(account_number_1, 500))
 
 # check balance
-print(bank.check_balance(account_number))
+print(bank.check_balance(account_number_2))
 
 # Withdraw money
-print(bank.withdraw(account_number, 200))
+print(bank.withdraw(account_number_2, 200))
 
 # Check if it's a government holiday
 print(bank.is_govt_holiday())
