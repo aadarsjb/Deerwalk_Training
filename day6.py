@@ -25,6 +25,7 @@ band = ['Nirvana', 'Alice In Chains', 'Nirvana', 'Pearl Jam', 'Nirvana', 'Alice 
 unique_value  = set(band)
 length = len(unique_value)
 print(length)
+print(unique_value)
 
 
 
