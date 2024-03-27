@@ -17,7 +17,7 @@ class Bank:
         return account_number
     
     def generate_account_number(self):
-        return str(len(self.accounts) + 1).zfill(6)
+        return str(len(self.accounts) + 1)
 
 
     def check_balance(self, account_number):
