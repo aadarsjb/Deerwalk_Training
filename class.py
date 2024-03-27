@@ -8,10 +8,10 @@ class Bank:
         self.__balance = 0
 
     
-    def check_balance(self):
+    def get_balance(self):
         return self.__balance
     
-    def deposite_balance(self, deposite_amount):
+    def deposit_balance(self, deposite_amount):
         self.__balance = self.__balance + deposite_amount
 
     
@@ -31,15 +31,28 @@ class Bank:
         print('Dashain holiday')
         print('Tihar holiday')
 
+account = None
 while True:
 
-    fn = input('Enter first Name')
-    ln = input('Enter last name')
+    choice = input('Enter 1 to create account. \nEnter 2 to check balance. \nEnter 3 to deposit balance. \nEnter 5 to withdraw balance. \nEnter 6 to change intrest rate. \nEnter 7 to get holidays.')
 
+    if choice == '1':
+        fn = input('Enter first name: ')
+        ln = input('Enter last name: ')
 
+        account = Bank(first_name = fn, last_name=ln)
 
+        print('Account has been created successfully')
 
+    elif choice == '2':
+        account.get_balance()
 
+    elif choice == '3':
+        deposit_amount = float(input('Enter deposit amount: '))
+        account.deposit_balance(deposit_amount)
+
+    elif choice == '4':
+        withdrawl_amount = int(input('Enter withdrawl amount: '))
 
 
 
