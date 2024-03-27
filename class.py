@@ -34,7 +34,7 @@ class Bank:
 account = None
 while True:
 
-    choice = input('Enter 1 to create account. \nEnter 2 to check balance. \nEnter 3 to deposit balance. \nEnter 5 to withdraw balance. \nEnter 6 to change intrest rate. \nEnter 7 to get holidays.')
+    choice = input('Enter 1 to create account. \nEnter 2 to check balance. \nEnter 3 to deposit balance. \nEnter 4 to withdraw balance. \nEnter 5 to check intrest rate. \nEnter 6 to change intrest rate. \nEnter 7 to get holidays.')
 
     if choice == '1':
         fn = input('Enter first name: ')
@@ -45,7 +45,8 @@ while True:
         print('Account has been created successfully')
 
     elif choice == '2':
-        account.get_balance()
+        balance = account.get_balance()
+        print(f'Your balance id {balance}')
 
     elif choice == '3':
         deposit_amount = float(input('Enter deposit amount: '))
@@ -53,7 +54,10 @@ while True:
 
     elif choice == '4':
         withdrawl_amount = int(input('Enter withdrawl amount: '))
+        account.withdraw_balance(withdrawl_amount)
 
+    elif choice == '5':
+        print(f'Banks current intrest ratye is {Bank.get_intrest_rate()}')
 
 
 
