@@ -31,15 +31,31 @@ class Bank:
 
 account = None
 
+while True:
+   choice = input('Enter 1 to create account. \nEnter 2 to check balance. \nEnter 3 to deposit balance. \nEnter 4 to withdraw balance. \nEnter 5 to check intrest rate. \nEnter 6 to change intrest rate. \nEnter 7 to get holidays.')
 
+   if choice == '1':
+       
+       fn = input("Enter your first name : ")
+       ln = input("Enter your last name : ")
 
+       account = Bank(first_name = fn, last_name = ln)
 
+       print('Account created successfully.')
 
+   elif choice == '2':
+       balance = account.get_balance()
 
+       print(f'Your balance is {balance}')
 
+   elif choice == '3':
+       deposit_amount = float(input('Enter deposit amount : '))
 
+       account.deposit_balance(deposit_amount)
 
+   elif choice == '4':
+       withdrawl_amount = int(input('Enter withdrawl amount : '))
+       account.withdraw_balance(withdrawl_amount)
 
-
-
-
+   elif choice == '5':
+       print(f'Banks current intrest is {Bank.get_intrest_rate()}')

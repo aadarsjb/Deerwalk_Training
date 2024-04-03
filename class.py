@@ -47,7 +47,7 @@ while True:
 
     elif choice == '2':
         balance = account.get_balance()
-        print(f'Your balance id {balance}')
+        print(f'Your balance is {balance}')
 
     elif choice == '3':
         deposit_amount = float(input('Enter deposit amount: '))
@@ -58,7 +58,7 @@ while True:
         account.withdraw_balance(withdrawl_amount)
 
     elif choice == '5':
-        print(f'Banks current intrest ratye is {Bank.get_intrest_rate()}')
+        print(f'Banks current intrest rate is {Bank.get_intrest_rate()}')
 
 
 
