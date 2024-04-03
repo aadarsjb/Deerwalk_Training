@@ -32,6 +32,7 @@ class Bank:
         print('Tihar holiday')
 
 account = None
+
 while True:
 
     choice = input('Enter 1 to create account. \nEnter 2 to check balance. \nEnter 3 to deposit balance. \nEnter 4 to withdraw balance. \nEnter 5 to check intrest rate. \nEnter 6 to change intrest rate. \nEnter 7 to get holidays.')
